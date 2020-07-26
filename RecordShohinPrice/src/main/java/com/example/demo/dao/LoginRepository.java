@@ -1,5 +1,9 @@
 package com.example.demo.dao;
 
-public class LoginRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.example.demo.dto.LoginDto;
+
+public interface LoginRepository extends JpaRepository<LoginDto, Integer> {
 
 }
